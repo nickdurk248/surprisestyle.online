@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get $750 for Product Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            height: 4px;
+            background: #FF6B35;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            transition: width 0.3s ease-out;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                      url('https://images.unsplash.com/photo-1483985988355-763728e1935b');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 1s 0.5s forwards;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Steps Section */
+        .steps-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .steps-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .step-card {
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s;
+        }
+
+        /* Trust Credentials */
+        .trust-credentials {
+            padding: 4rem 2rem;
+            background: #f9f9f9;
+        }
+
+        .credential-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Footer & CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2rem; }
+            .steps-container { grid-template-columns: 1fr; }
+            .testimonial-grid { grid-template-columns: 1fr; }
+            .floating-cta { display: block!important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Earn $750 Cash 💸<br>Review Products You Love!</h1>
+            <p class="hero-subtitle">"Join 25,000+ Verified Reviewers"</p>
+            <a href="https://glstrck.com/aff_c?offer_id=1285&aff_id=26967" 
+               class="cta-btn"
+               style="display: inline-block;
+                      background: #FF6B35;
+                      color: white;
+                      padding: 15px 40px;
+                      border-radius: 30px;
+                      text-decoration: none;
+                      margin-top: 20px;
+                      animation: pulse 2s infinite;">
+               Start Now ➔
+            </a>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Select Product</h3>
+                <p>Choose any item you've purchased</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Write Review</h3>
+                <p>Share your honest experience</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Get Paid</h3>
+                <p>Receive $750 via PayPal/Card</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Credentials -->
+    <section class="trust-credentials">
+        <div class="credential-container">
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                         alt="Sarah" 
+                         style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem;">
+                    <div style="color: #FFD700; font-size: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                    <p>"Received payment within hours! So easy!"</p>
+                    <p style="font-weight: bold; margin-top: 1rem;">- Sarah, TX</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                         alt="Mike" 
+                         style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem;">
+                    <div style="color: #FFD700; font-size: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                    <p>"Best side hustle I've found. 10/10!"</p>
+                    <p style="font-weight: bold; margin-top: 1rem;">- Mike, CA</p>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 3rem 0;">
+                <div style="padding: 2rem; background: white; border-radius: 15px;">
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: #FF6B35;"></i>
+                    <h4>Bank-Level Security</h4>
+                    <p>256-bit SSL Encryption</p>
+                </div>
+                <div style="padding: 2rem; background: white; border-radius: 15px;">
+                    <i class="fas fa-lock" style="font-size: 2.5rem; color: #FF6B35;"></i>
+                    <h4>Guaranteed Payments</h4>
+                    <p>$21M+ Paid to Reviewers</p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div style="display: flex; justify-content: center; gap: 4rem; margin: 3rem 0;">
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #FF6B35;">25K+</div>
+                    <div>Happy Reviewers</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #FF6B35;">$21M+</div>
+                    <div>Paid Out</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://glstrck.com/aff_c?offer_id=1285&aff_id=26967" 
+           style="display: block;
+                  background: #FF6B35;
+                  color: white;
+                  padding: 15px;
+                  border-radius: 25px;
+                  text-decoration: none;
+                  animation: pulse 2s infinite;">
+           🎉 Claim Your $750 Now
+        </a>
+    </div>
+
+    <script>
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+            const progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        });
+
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.25 });
+
+        document.querySelectorAll('.step-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            observer.observe(card);
+        });
+
+        // Mobile CTA
+        window.addEventListener('scroll', () => {
+            const floatingCTA = document.querySelector('.floating-cta');
+            if(window.innerWidth < 768) {
+                floatingCTA.style.display = window.scrollY > 300 ? 'block' : 'none';
+            }
+        });
+    </script>
+</body>
+</html>
