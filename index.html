@@ -1,285 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get $750 for Product Reviews</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earn $750 to Review Shein Products</title>
+  <meta name="description" content="Join 25,000+ people getting paid to review Shein products. It's fast, simple, and pays up to $750!" />
+  <meta name="keywords" content="shein, product reviews, get paid, make money, work from home" />
 
-        html {
-            scroll-behavior: smooth;
-        }
+  <!-- Font + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-        /* Progress Bar */
-        .progress-bar {
-            height: 4px;
-            background: #FF6B35;
-            width: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9999;
-            transition: width 0.3s ease-out;
-        }
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-        /* Hero Section */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://raw.githubusercontent.com/nickdurk248/surprisestyle.online/main/shein-bg.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
+    html { scroll-behavior: smooth; }
+    body { background: #fff; color: #111; }
 
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 0;
-            animation: fadeIn 1s 0.5s forwards;
-        }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://raw.githubusercontent.com/nickdurk248/surprisestyle.online/main/shein-bg.png') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
 
-        .hero-title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
 
-        /* Steps Section */
-        .steps-section {
-            padding: 4rem 2rem;
-            background: white;
-        }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
 
-        .steps-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
+    .cta-btn {
+      background: #FF6B35;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      animation: pulse 2s infinite;
+    }
 
-        .step-card {
-            padding: 2rem;
-            background: #f8f9fa;
-            border-radius: 10px;
-            text-align: center;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s;
-        }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
 
-        /* Trust Credentials */
-        .trust-credentials {
-            padding: 4rem 2rem;
-            background: #f9f9f9;
-        }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-        .credential-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
 
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
 
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+    .step-card {
+      background: #f8f8f8;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s;
+    }
 
-        /* Footer & CTA */
-        .floating-cta {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            max-width: 400px;
-            text-align: center;
-            z-index: 1000;
-            display: none;
-        }
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+    .step-number {
+      font-size: 2rem;
+      color: #FF6B35;
+      font-weight: bold;
+    }
 
-        @keyframes slideUp {
-            from { transform: translateY(100%); }
-            to { transform: translateY(0); }
-        }
+    .trust {
+      background: #fdfdfd;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
 
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-            .hero-title { font-size: 2rem; }
-            .steps-container { grid-template-columns: 1fr; }
-            .testimonial-grid { grid-template-columns: 1fr; }
-            .floating-cta { display: block!important; }
-        }
-    </style>
+    .testimonial, .badge {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .testimonial img {
+      width: 70px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .badge i {
+      font-size: 2rem;
+      color: #FF6B35;
+      margin-bottom: 0.5rem;
+    }
+
+    .stats {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .stats div {
+      display: inline-block;
+      margin: 0 2rem;
+      font-size: 1.5rem;
+      color: #FF6B35;
+      font-weight: bold;
+    }
+
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      display: none;
+      z-index: 1000;
+    }
+
+    .floating-cta a {
+      display: block;
+      background: #FF6B35;
+      color: white;
+      padding: 15px;
+      border-radius: 25px;
+      text-decoration: none;
+      animation: pulse 2s infinite;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      .floating-cta { display: block !important; }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="progress-bar" id="progressBar"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Review Shein Products & Get $750<br></h1>
-            <p class="hero-subtitle">"Join 25,000+ Verified Reviewers"</p>
-            <a href="https://glstrck.com/aff_c?offer_id=1285&aff_id=26967" 
-               class="cta-btn"
-               style="display: inline-block;
-                      background: #FF6B35;
-                      color: white;
-                      padding: 15px 40px;
-                      border-radius: 30px;
-                      text-decoration: none;
-                      margin-top: 20px;
-                      animation: pulse 2s infinite;">
-               Start Now ➔
-            </a>
-        </div>
-    </section>
-
-    <!-- Steps Section -->
-    <section class="steps-section">
-        <div class="steps-container">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <h3>Select Product</h3>
-                <p>Choose any item you've purchased</p>
-            </div>
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <h3>Write Review</h3>
-                <p>Share your honest experience</p>
-            </div>
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <h3>Get Paid</h3>
-                <p>Receive $750 via PayPal/Card</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Credentials -->
-    <section class="trust-credentials">
-        <div class="credential-container">
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" 
-                         alt="Sarah" 
-                         style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem;">
-                    <div style="color: #FFD700; font-size: 1.5rem;">⭐⭐⭐⭐⭐</div>
-                    <p>"Received payment within hours! So easy!"</p>
-                    <p style="font-weight: bold; margin-top: 1rem;">- Sarah, TX</p>
-                </div>
-                <div class="testimonial-card">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" 
-                         alt="Mike" 
-                         style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem;">
-                    <div style="color: #FFD700; font-size: 1.5rem;">⭐⭐⭐⭐⭐</div>
-                    <p>"Best side hustle I've found. 10/10!"</p>
-                    <p style="font-weight: bold; margin-top: 1rem;">- Mike, CA</p>
-                </div>
-            </div>
-
-            <!-- Trust Badges -->
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 3rem 0;">
-                <div style="padding: 2rem; background: white; border-radius: 15px;">
-                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: #FF6B35;"></i>
-                    <h4>Bank-Level Security</h4>
-                    <p>256-bit SSL Encryption</p>
-                </div>
-                <div style="padding: 2rem; background: white; border-radius: 15px;">
-                    <i class="fas fa-lock" style="font-size: 2.5rem; color: #FF6B35;"></i>
-                    <h4>Guaranteed Payments</h4>
-                    <p>$21M+ Paid to Reviewers</p>
-                </div>
-            </div>
-
-            <!-- Stats -->
-            <div style="display: flex; justify-content: center; gap: 4rem; margin: 3rem 0;">
-                <div>
-                    <div style="font-size: 2.5rem; font-weight: bold; color: #FF6B35;">25K+</div>
-                    <div>Happy Reviewers</div>
-                </div>
-                <div>
-                    <div style="font-size: 2.5rem; font-weight: bold; color: #FF6B35;">$21M+</div>
-                    <div>Paid Out</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Floating CTA -->
-    <div class="floating-cta">
-        <a href="https://glstrck.com/aff_c?offer_id=1285&aff_id=26967" 
-           style="display: block;
-                  background: #FF6B35;
-                  color: white;
-                  padding: 15px;
-                  border-radius: 25px;
-                  text-decoration: none;
-                  animation: pulse 2s infinite;">
-           🎉 Claim Your $750 Now
-        </a>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1> Get Paid $750 to Review Shein Products</h1>
+      <p>Join over 25,000 verified users earning real money from home.</p>
+      <a class="cta-btn" href="https://glstrck.com/aff_c?offer_id=1285&aff_id=26967">Start Now & Claim Your Spot</a>
     </div>
+  </section>
 
-    <script>
-        // Progress Bar
-        window.addEventListener('scroll', () => {
-            const scrollTop = document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight;
-            const clientHeight = document.documentElement.clientHeight;
-            const progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
-            document.getElementById('progressBar').style.width = progress + '%';
-        });
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Choose a Product</h3>
+        <p>Select a Shein item you've used or want to review.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Write a Review</h3>
+        <p>Give your honest opinion. Quality feedback gets rewarded.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Receive $750</h3>
+        <p>Get paid through PayPal, Card, or secure channels.</p>
+      </div>
+    </div>
+  </section>
 
-        // Scroll Animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.25 });
+  <!-- TRUST & TESTIMONIALS -->
+  <section class="section trust">
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+      <p><strong>“Got paid within hours. Incredible!”</strong></p>
+      <p>- Sarah, TX</p>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mike">
+      <p><strong>“Best online side hustle I’ve tried. 10/10!”</strong></p>
+      <p>- Mike, CA</p>
+    </div>
+    <div class="badge">
+      <i class="fas fa-shield-alt"></i>
+      <h4>Secure & Protected</h4>
+      <p>256-bit SSL encryption</p>
+    </div>
+    <div class="badge">
+      <i class="fas fa-lock"></i>
+      <h4>Guaranteed Payments</h4>
+      <p>$21M+ paid out to reviewers</p>
+    </div>
+  </section>
 
-        document.querySelectorAll('.step-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            observer.observe(card);
-        });
+  <!-- STATS -->
+  <section class="stats">
+    <div>✅ 25,000+ Happy Reviewers</div>
+    <div>💰 $21,000,000+ Paid Out</div>
+  </section>
 
-        // Mobile CTA
-        window.addEventListener('scroll', () => {
-            const floatingCTA = document.querySelector('.floating-cta');
-            if(window.innerWidth < 768) {
-                floatingCTA.style.display = window.scrollY > 300 ? 'block' : 'none';
-            }
-        });
-    </script>
+  <!-- MOBILE CTA -->
+  <div class="floating-cta">
+    <a href="https://glstrck.com/aff_c?offer_id=1285&aff_id=26967">🎉 Claim Your $750 Now</a>
+  </div>
+
+  <script>
+    // Floating CTA toggle on scroll
+    window.addEventListener('scroll', () => {
+      const cta = document.querySelector('.floating-cta');
+      if (window.scrollY > 400 && window.innerWidth < 768) {
+        cta.style.display = 'block';
+      } else {
+        cta.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
